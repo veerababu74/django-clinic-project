@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="='utf-8">
+     <title>delete patient</title>
+
+</head>
+
+<body>
+
+<h2>delete patient {{patient.firstname}} </h2>
+<form method="post">
+    <input type="submit" value="confirm">
+    <a href="/">cancel</a>
+    {%csrf_token%}
+</form>
+
+</body>
+</html>

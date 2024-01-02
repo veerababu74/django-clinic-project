@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="='utf-8">
+     <title>CLINICAL REPOSR</title>
+
+</head>
+
+<body>
+
+<h1>CLINCICAL REPOR</h1>
+<form method="post">
+    <table border="2">
+        <thead>
+            <th>component name</th>
+            <th>component val</th>
+            <th>mesured data time </th>
+        </thead>
+        {% for i in data%}
+        <tr>
+            <td>{{i.componentname}}</td>
+            <td>{{i.componentval}}</td>
+            <td>{{i.mesureddatetime}}</td>
+
+
+        </tr>
+        {%endfor%}
+
+  
+    </table>
+    <a href="/">home</a>
+
+</form>
+
+</body>
+</html>
